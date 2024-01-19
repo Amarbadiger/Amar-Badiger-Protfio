@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  padding: 0 4vw;
+}
+.nav .logo {
+  font-size: 2vw;
+  background: -webkit-linear-gradient(#c197fa, #947bf4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav .right img {
+  width: 40px;
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 100px);
+  padding: 0 4vw;
+  display: flex;
+  /* background-color: rgb(77, 59, 59); */
+}
+.main .hero-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.main .hero-left p {
+  color: cadetblue;
+  font-weight: 800;
+}
+.main .hero-left h1 {
+  font-size: 5vw;
+  width: 19vw;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.main .hero-left h2 {
+  font-size: 1.8vw;
+  font-weight: 400;
+  margin-left: 15px;
+  background: -webkit-linear-gradient(#c197fa, #947bf4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main .hero-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .hero-right img {
+  width: 22vw;
+  border-radius: 2vw;
+  box-shadow: 5px 5px 5px rgb(39, 38, 38);
+}
+.btn {
+  display: flex;
+  gap: 10px;
+  margin-left: -130px;
+}
+
+.btn button a img {
+  border-radius: 5vw;
+}
+
+@media (0<width<600px) {
+  .nav {
+    padding: 0px 4vw;
+  }
+  .nav .logo {
+    font-size: 4.5vw;
+  }
+  .nav .right img {
+    width: 30px;
+  }
+  .main {
+    padding: 0 4vw;
+    flex-direction: column-reverse;
+  }
+  .main .hero-left {
+    /* margin-left: px; */
+  }
+  .main .hero-left h1 {
+    font-size: 10vw;
+  }
+  .main .hero-left h2 {
+    width: 100%;
+    font-size: 5vw;
+    width: 80vw;
+    margin-left: 130px;
+    text-align: center;
+  }
+
+  .main .hero-right img {
+    width: 70vw;
+    height: 50vh;
+    border-radius: 2vw;
+    box-shadow: 5px 5px 5px rgb(39, 38, 38);
+    margin-left: 100%;
+    /* margin-top: 80px; */
+  }
+  .btn {
+    margin-left: 60px;
+  }
+}
